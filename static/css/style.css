@@ -1,0 +1,425 @@
+/* root start */
+:root {
+  --bg-color: rgb(238, 239, 243);
+  --color1: white;
+  --color2: black;
+  --color3: blue;
+  --font-family:  font-family: "Bebas Neue", sans-serif;;
+}
+/* root end */
+
+/* Body styling start */
+* {
+    font-family: var(--font-family);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+/* Body styling end */
+
+#bars> i{
+    display: none;
+}
+
+/* Header styling  start*/
+#header {
+  height: 70px;
+  padding: 20px;
+  width: 60rem;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 1px 1px 2px var(--color2);
+}
+/* Header styling end */
+
+/* Nav logo start */
+#logo h1{
+    color: var(--color2)
+}
+/* Nav logo end */
+
+/* main-nav styling start */
+#main-nav {
+  display: flex;
+  gap: 20rem;
+  align-items: center;
+}
+/* main-nav styling end */
+
+/* Nav-list start */
+.navlist {
+  display: flex;
+  gap: 4rem;
+  color: var(--color2);
+
+  &:focus{
+    font-weight: bold;
+    color: blue;
+  }
+}
+
+/* Nav list end */
+
+/* text&img start */
+/* Img start */
+.text-img{
+    display: flex;
+    gap: 5rem;
+}
+
+.img{
+    padding: 40px;
+}
+
+.img img{
+    width: 450px;
+}
+/* Img end */
+/* Txt start */
+.txt{
+    padding: 200px 100px;
+}
+
+.txt h1{
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.txt button{
+    width: 150px;
+    border: 2px solid var(--color3);
+    padding: 10px;
+    font-weight: bold;
+    color: var(--color2);
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.txt h3{
+    color: blue;
+    font-size: 30px;
+}
+.txt a{
+    color: var(--color2);
+}
+/* Txt end */
+/* text&img end */
+
+.about h1{
+    margin-left: 550px;
+    font-size: 40px;
+}
+
+.about-me{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    width: 600px;
+    height: 360px;
+    border-radius: 10px;
+    text-align: left;
+    border: none;
+    background-color: ghostwhite;
+    font-weight: 550;
+}
+
+.about-holder{
+    display: flex;
+}
+
+.abt-me-img img{
+    width: 500px;
+    margin-left: 60x;
+}
+/* about-end */
+
+/* skills start */
+.skills-img{
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.pato-place{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 4rem;
+    margin-left: 300px;
+    background-color: ghostwhite;
+    width: 700px;
+}
+
+.pato-place h2{
+    background-color: ghostwhite;
+}
+
+.pato-img img{
+    border-radius: 10px;
+}
+
+.pato-txt{
+    margin: auto;
+    margin-left: 50px;
+    background-color: ghostwhite;
+}
+
+.pato-txt a{
+    background-color: ghostwhite;
+}
+
+.project-build{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    gap: 2rem;
+    background-color: ghostwhite;
+
+}
+
+.prj-build-txt{
+    background-color: ghostwhite;
+    margin: auto;
+    text-align: center;
+}
+
+.prj-build-txt h3{
+    font-size: 30px;
+    background-color: ghostwhite;
+}
+
+.prj-build-txt button{
+    padding: 20px 30px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: var(--color3);
+    color: var(--color1);
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.prj-build-txt button > a{
+    background-color: blue;
+    color: white;
+}
+
+.prj-build-img img, p{
+    margin-top: -20px;
+    background-color: ghostwhite;
+}
+
+.contact-holder{
+    display: flex;
+    gap: 2rem;
+    padding: 20px 70px;
+}
+
+.location> h1{
+    margin-left: 10px;
+    display: block;
+}
+
+.location{
+    padding: 30px;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.mail{
+    background-color: ghostwhite;
+    margin-bottom: 40px;
+}
+
+.phone{
+    background-color: ghostwhite;
+    margin-bottom: 40px;
+}
+
+.Location{
+    background-color: ghostwhite;
+    margin-bottom: 40px;
+}
+
+input{
+    padding: 10px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+
+textarea{
+    padding: 10px;
+    margin: 30px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    width: 350px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid blue;
+}
+
+form>  button{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+form{
+    /* margin: auto; */
+    background-color: ghostwhite;
+    padding: 40px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px grey;
+}
+
+.contact-holder{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: ghostwhite;
+    padding: 40px;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px grey;
+    display: block;
+}
+
+.form{
+    justify-content: center;
+    display: flex;
+    gap: 3rem;
+}
+
+.mail> a{
+    background-color: ghostwhite;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    
+    &:hover{
+        cursor: pointer;
+        color: blue;
+    }
+}
+
+.phone> a{
+    background-color: ghostwhite;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+
+    &:hover{
+        cursor: pointer;
+        color: blue;
+    }
+}
+
+.Location> a{
+    background-color: ghostwhite;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+
+    &:hover{
+        cursor: pointer;
+        color: blue;
+    }
+}
+
+footer{
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    padding: 30px 20px;
+}
+
+.footer-link{
+    background-color: white;
+}
+
+.footer-name> h1{
+    background-color: white;
+}
+
+.footer-link{
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-link> a{
+    margin-bottom: 10px;
+    display: flex;
+    background-color: white;
+    color: blue;
+    gap: 2rem;
+}
+
+.footer-link2> a{
+    background-color: white;
+}
+
+.footer-link2{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.COPYRIGHT{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#project{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#about{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px; 
+}
+
+#skills{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px; 
+}
+
+#name{
+    font-weight: bold;
+    font-size: 40px; 
+}
