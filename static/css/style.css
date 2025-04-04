@@ -423,3 +423,191 @@ footer{
     font-weight: bold;
     font-size: 40px; 
 }
+
+@media (max-width: 992px) {
+    .text-img{
+        display: block;
+        margin-bottom: 50px;
+    }
+    
+    .img{
+        padding: 10px;
+    }
+    .img img{
+        width: 100%;
+    }
+    
+    .about-holder{
+        display: block;
+        padding: 20px;
+    }
+    .about-me{
+        margin-top: 0;
+        margin-left: 0;
+        padding: 20px;
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        text-align: left;
+        border: none;
+        background-color: ghostwhite;
+        font-weight: 550;
+    }
+    .abt-me-img> img{
+        width: 100%;
+    }
+    .skills-img{
+        padding: 40px;
+        display: block;
+        width: 100%;
+    }
+    .pato-place{
+        padding: 30px;
+        margin-left: 0;
+        display: block;
+        width: 100%;
+    }
+    .project-build{
+        width: 100%;
+        display: block;
+        height: 600px;
+    }
+    .prj-build-img img{
+        width: 100%;
+    }
+    .form{
+        display: block;
+        width: 100%;
+    }
+    .contact-holder{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    form{
+        width: 100%;
+        padding: 5px;
+    }
+    footer{
+        display: block;
+    }
+    .footer-name{
+        margin-bottom: 30px;
+    }
+    .footer-link{
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+/* Mobile menu icon */
+#bars {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--color2);
+  }
+  
+  #bars> i{
+      display: none;
+  }
+  
+  /* Header styling  start*/
+  #header {
+    height: 70px;
+    padding: 20px;
+    width: 100%;
+    max-width: 60rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 1px 1px 2px var(--color2);
+  }
+  /* Header styling end */
+  
+  /* Nav logo start */
+  #logo h1 {
+    color: var(--color2)
+  }
+  /* Nav logo end */
+  
+  /* main-nav styling start */
+  #main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navlist {
+    display: flex;
+    gap: 4rem;
+    color: var(--color2);
+    transition: all 0.3s ease;
+  }
+  
+  .navlist a:focus {
+    font-weight: bold;
+    color: blue;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    #header {
+      width: 95%;
+      padding: 10px 20px;
+    }
+    
+    #main-nav {
+      gap: 1rem;
+      position: relative;
+    }
+    
+    #bars {
+      display: block;
+      z-index: 1001;
+    }
+    
+    #bars > i {
+      display: block;
+    }
+    
+    .navlist {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      transition: all 0.5s ease;
+      z-index: 1000;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navlist.active {
+      right: 0;
+    }
+    
+    #logo h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navlist {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navlist {
+      width: 100%;
+    }
+    
+    #header {
+      height: 60px;
+    }
+  }
