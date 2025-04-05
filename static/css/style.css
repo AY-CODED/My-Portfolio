@@ -493,6 +493,11 @@ footer{
     .prj-build-img img{
         width: 100%;
     }
+    .txt{
+        font-size: 14px;
+        width: 100%;
+        display: block;
+    }
     .form{
         display: block;
         width: 100%;
