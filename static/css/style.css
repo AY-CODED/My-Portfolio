@@ -487,6 +487,11 @@ footer{
         width: 100%;
         height: 300px;
     }
+
+    .pato-img img{
+        width: 100%;
+    }
+
     .pato-place{
         background-color: ghostwhite;
         padding: 0;
