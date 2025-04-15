@@ -68,7 +68,9 @@
 }
 
 /* Nav list end */
-
+#Message{
+    color: black;
+}
 /* text&img start */
 /* Img start */
 .text-img{
